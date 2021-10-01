@@ -10,19 +10,19 @@
 <body>
     <div id="calculator">
 
-        <div class="shadow-2xl rounded-3xl mt-20 md:mr-auto md:ml-auto bg-gray-100 lg:w-4/12">
+        <div class="shadow-2xl rounded-3xl mt-16 mx-auto bg-gray-100 total">
 
             <!-- 計算式 -->
             <div class="flex justify-center pt-14">
-                <input class="border-none shadow-inner font-mono font-bold text-right text-4xl bg-gray-200 rounded-t-2xl w-2/4 py-3 px-2 text-shadow-2xl text-gray-700 leading-tight" id="inline-full-name" type="text" v-bind:value="inputNum" v-bind:disabled="disabled"/>
+                <input class="flex justify-center border-none shadow-inner font-mono font-bold text-right text-4xl bg-gray-200 rounded-t-2xl w-64 py-3 px-2 text-shadow-2xl text-gray-700 leading-tight" id="inline-full-name" type="text" v-bind:value="inputNum" v-bind:disabled="disabled"/>
             </div>
 
             <!--　計算結果 -->
             <div class="flex justify-center">
-                <input class="border-none shadow-inner font-mono font-bold text-right text-4xl bg-gray-200  rounded-b-2xl w-2/4 py-3 px-2 text-gray-700 leading-tight" type="text" v-bind:value="total" v-bind:disabled="disabled"/>
+                <input class="border-none shadow-inner font-mono font-bold text-right text-4xl bg-gray-200  rounded-b-2xl w-64 py-3 px-2 text-gray-700 leading-tight" type="text" v-bind:value="total" v-bind:disabled="disabled"/>
             </div>
 
-            <div class="ml-16 flex lg:w-9/12 flex-wrap justify-center md:pt-10 pb-10">
+            <div class="ml-24 btnStyle flex flex-wrap justify-center pt-10 pb-10">
                 <button class="shadow-lg mr-6 bg-white hover:bg-blue-500 text-blue-500 border border-blue-500 hover:text-white hover:border-transparent text-3xl py-4 px-6 font-bold rounded-full" v-on:click="seven">7</button>
                 <button class="shadow-lg mr-6 bg-white hover:bg-blue-500 text-blue-500 border border-blue-500 hover:text-white hover:border-transparent text-3xl py-4 px-6 text-white font-bold  rounded-full" v-on:click="eight">8</button>
                 <button class="shadow-lg mr-6 bg-white hover:bg-blue-500 text-blue-500 border border-blue-500 hover:text-white hover:border-transparent text-white text-3xl py-4 px-6 font-bold  rounded-full" v-on:click="nine">9</button>
